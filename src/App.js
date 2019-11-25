@@ -3,7 +3,7 @@ import {Switch, Route, withRouter} from "react-router-dom";
 import * as userAction from './store/action/user';
 import {connect} from 'react-redux';
 import Header from './Components/Header';
-import Home from "./Screens/Home";
+import MoviesList from "./Screens/MoviesList";
 import MovieDetail from "./Screens/MovieDetail";
 import './App.css';
 
@@ -26,10 +26,10 @@ class App extends Component {
             <MovieDetail />
           </Route>
           <Route path="/favourite">
-            <Home />
+            <MoviesList />
           </Route>
           <Route path="/">
-            <Home />
+            <MoviesList />
           </Route>
         </Switch>
       </>
